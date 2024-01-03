@@ -1,0 +1,7 @@
+;WAP to add two 8-bits number
+MVI A,25H
+MVI B,35H
+ADD B
+MOV C, A 
+STA 2050H
+hlt
