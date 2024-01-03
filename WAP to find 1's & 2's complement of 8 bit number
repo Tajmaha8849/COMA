@@ -1,0 +1,9 @@
+;WAP to find 1's & 2's complement of 8 bit number
+MVI A,12H
+CMA
+MOV C,A
+STA 2024H
+ADI 01H
+MOV D,A
+STA 2025H
+hlt
