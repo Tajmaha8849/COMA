@@ -1,0 +1,9 @@
+;WAP to perform multiplication of  two 8-bits number using additon
+
+MVI A,05H
+MVI B,05H
+ADD B
+ADD B
+MOV C,A
+STA 2000H
+hl
