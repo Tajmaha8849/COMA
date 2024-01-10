@@ -1,0 +1,39 @@
+;Write an assembly language program to transfer a block of data from memory location 2010H to 2080H
+MVI A,11H;
+STA 2010H;
+MVI A,12H;
+STA 2011H;
+MVI A,13H;
+STA 2012H;
+LXI H,2010H;
+LXI D,2080H;
+MVI C,03H;
+OM:MOV A,M;
+STAX D;
+INX H;
+INX D;
+DCR C;
+JNZ OM;
+hlt
+
+
+;Only for comment purpose 
+;Assembler Output
+1		;Write an assembly language program to transfer a block of data from memory location 2010H to 2080H
+2	3E 11	MVI A,11H;
+3	32 10 20	STA 2010H;
+4	3E 12	MVI A,12H;
+5	32 11 20	STA 2011H;
+6	3E 13	MVI A,13H;
+7	32 12 20	STA 2012H;
+8	21 10 20	LXI H,2010H;
+9	11 80 20	LXI D,2080H;
+10	0E 03	MVI C,03H;
+11	7E	OM:MOV A,M;
+12	12	STAX D;
+13	23	INX H;
+14	13	INX D;
+15	0D	DCR C;
+16	C2 17 08	JNZ OM;
+17	76	hlt
+
