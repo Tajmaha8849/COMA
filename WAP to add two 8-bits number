@@ -1,4 +1,4 @@
-;WAP to add two 8-bits number
+;WAP to add two 8-bits number Main Program
 MVI A,25H
 MVI B,35H
 ADD B
