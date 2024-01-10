@@ -1,4 +1,4 @@
-;WAP to perform multiplication of  two 8-bits number using additon
+;WAP to perform multiplication of  two 8-bits number using additon  main.asm
 
 MVI A,05H
 MVI B,05H
