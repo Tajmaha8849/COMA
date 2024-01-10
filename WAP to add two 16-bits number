@@ -1,4 +1,4 @@
-;WAP to add two 16-bits number
+;WAP to add two 16-bits number main.asm
 
 MVI A,22H
 STA 2001H
