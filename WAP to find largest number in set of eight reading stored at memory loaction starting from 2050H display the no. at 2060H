@@ -1,0 +1,19 @@
+;WAP to find largest number in set of eight reading stored at memory loaction starting from 2050H display the no. at 2060H
+
+MVI A,00H
+LXI H,2050H
+MOV A,M
+MVI C,08H
+OM: INX H
+CMP M
+JNC NEXT
+MOV A,M
+NEXT:STA 2060H
+DCR C
+JNZ OM
+
+
+hlt
+
+
+
